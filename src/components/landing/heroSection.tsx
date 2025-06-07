@@ -127,7 +127,7 @@ export default function HeroSection() {
                 </div>
               </h1>
 
-              <h1 className="text-white justify-center items-center text-center font-extrabold text-8xl sm:text-6xl md:text-7xl lg:text-9xl xl:text-[9rem] leading-tight">
+              <h1 className="text-white justify-center items-center text-center font-extrabold text-7xl sm:text-6xl md:text-7xl lg:text-9xl xl:text-[9rem] leading-tight">
                 text.ai
               </h1>
 
@@ -145,7 +145,7 @@ export default function HeroSection() {
               <div
                 key={i}
                 className={`${
-                  i === 3 ? "bg-gray-100 text-black hover:bg-gray-300/90" : "bg-blue-400 text-white hover:bg-blue-400/90"
+                  i === 3 ? "flex items-center justify-center bg-gray-100 text-black hover:bg-gray-300/90" : "bg-[#0062ff] text-white hover:bg-[#0062ff]/70"
                 } rounded-2xl px-5 py-2 sm:px-6 sm:py-3 font-semibold transition-colors duration-200 cursor-pointer whitespace-nowrap text-center text-sm sm:text-base`}
               >
                 {text}
