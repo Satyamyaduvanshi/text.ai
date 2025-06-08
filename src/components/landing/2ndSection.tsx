@@ -48,7 +48,7 @@ export default function SecondSection() {
         opacity: hasScrolled ? opacity : 0,
         scale: hasScrolled ? scale : 0.95,
       }}
-      className="fixed w-full h-screen z-20 overflow-hidden pointer-events-non"
+      className="fixed w-full h-screen z-20 overflow-hidden pointer-events-none bg-black/95"
     >
       {/* Sticky Phone */}
       <div className="h-full w-full pt-32 flex items-center justify-center sticky top-0 z-10 pointer-events-none bg-gradient-to-b from-gray-700 to-black">

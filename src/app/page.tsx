@@ -1,10 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import NavBar from "@/components/navBar";
 import HeroSection from "@/components/landing/heroSection";
 import SecondSection from "@/components/landing/2ndSection";
 import { useEffect } from "react";
+import Footer from "@/components/Footer";
+import FifthSection from "@/components/5section";
 
 export default function Home() {
   useEffect(() => {
@@ -22,6 +23,10 @@ export default function Home() {
         <NavBar />
         <HeroSection />
         <SecondSection />
+        <FifthSection/>
+        <div>
+        <Footer />
+        </div>
       </div>
     </main>
   );

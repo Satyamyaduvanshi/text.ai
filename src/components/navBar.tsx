@@ -22,7 +22,7 @@ export default function NavBar() {
 
   return (
     <div className="fixed top-1 left-1/2 transform -translate-x-1/2
-      z-50 w-full max-w-[1243px] bg-black/30  lg:rounded-full px-1 lg:border-l-[2px] lg:border-r-[2px] border-white ">
+      z-50 w-full max-w-[1243px] bg-black/30 lg:rounded-full px-1 lg:border-l-[2px] lg:border-r-[2px] border-white ">
       <header className="w-full">
         <nav
           className="
@@ -52,19 +52,19 @@ export default function NavBar() {
           <div className="hidden [@media(min-width:989px)]:flex left-1/2  justify-center items-center text-sm font-medium">
   <a
     href="#"
-    className="transition px-3 py-1.5 rounded-lg text-[#0062ff] hover:bg-[#0062ff]/10 hover:text-white active:font-semibold"
+    className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-[#0062ff]/80 hover:bg-[#0062ff]/10 hover:text-white active:font-semibold"
   >
     Try on SMS
   </a>
   <a
     href="#"
-    className="transition px-3 py-1.5 rounded-lg text-[#0062ff] hover:bg-[#0062ff]/10 hover:text-white active:font-semibold"
+    className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-[#0062ff]/80 hover:bg-[#0062ff]/10 hover:text-white active:font-semibold"
   >
     Try on WhatsApp
   </a>
   <a
     href="#"
-    className="transition px-3 py-1.5 rounded-lg text-[#0062ff] hover:bg-[#0062ff]/10 hover:text-white active:font-semibold"
+    className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-[#0062ff]/80 hover:bg-[#0062ff]/10 hover:text-white active:font-semibold"
   >
     Save Contact
   </a>
@@ -73,19 +73,19 @@ export default function NavBar() {
 <div className="hidden [@media(min-width:989px)]:flex gap-3 justify-center items-center text-sm font-medium">
   <a
     href="/"
-    className="transition px-3 py-1.5 rounded-lg text-white hover:bg-white/10 hover:text-blue/10 active:font-semibold"
+    className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-white/50 hover:bg-white/20 hover:text-white active:font-semibold"
   >
     Home
   </a>
   <a
     href="/faq"
-    className="transition px-3 py-1.5 rounded-lg text-white hover:bg-white/10 hover:text-white active:font-semibold"
+    className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-white/50 hover:bg-white/20 hover:text-white active:font-semibold"
   >
     FAQ
   </a>
   <a
     href="/contact us"
-    className="transition px-3 py-1.5 rounded-lg text-white hover:bg-white/10 hover:text-white active:font-semibold"
+    className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-white/50 hover:bg-white/20 hover:text-white active:font-semibold"
   >
     Contact Us
   </a>

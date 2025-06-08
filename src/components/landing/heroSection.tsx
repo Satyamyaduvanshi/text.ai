@@ -129,7 +129,7 @@ export default function HeroSection() {
           >
             <span>Backed by</span>
             <div className="mt-[2px]">
-              <img src="/ycom.svg" alt="Y Combinator Logo" className="h-[10px] sm:h-[18px] md:h-[20px] lg:h-[25px]" />
+              <img src="/ycom.svg" alt="Y Combinator Logo" className="h-[10px] sm:h-[12px] md:h-[15px] lg:h-[18px]" />
             </div>
           </motion.div>
 
@@ -139,7 +139,7 @@ export default function HeroSection() {
             className="absolute top-[160px] px-4 w-full"
           >
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-white font-semibold leading-snug text-3xl sm:text-3xl md:text-4xl lg:text-5xl">
+              <h1 className="text-white font-semibold leading-snug text-3xl sm:text-2xl md:text-3xl lg:text-4xl">
                 Collaborative AI,
                 <br />
                 just a message away
@@ -164,7 +164,7 @@ export default function HeroSection() {
                 </div>
               </h1>
 
-              <h1 className="text-white justify-center items-center text-center font-extrabold text-7xl sm:text-6xl md:text-7xl lg:text-9xl xl:text-[9rem] leading-tight">
+              <h1 className="text-white justify-center items-center text-center font-extrabold text-7xl sm:text-6xl md:text-7xl lg:text-9xl xl:text-[9rem] leading-tight mt-[-12px]">
                 text.ai
               </h1>
 
@@ -176,7 +176,7 @@ export default function HeroSection() {
             </div>
           </motion.div>
 
-          <div className="relative top-[460px] sm:top-[490px] md:top-[540px] lg:top-[700px]">
+          <div className="relative top-[460px] sm:top-[490px] md:top-[540px] lg:top-[650px]">
 
             {/* Buttons */}
             <motion.div
