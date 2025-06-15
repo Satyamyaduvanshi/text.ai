@@ -19,7 +19,7 @@ const links = [
 export default function Footer() {
 
     return (
-        <footer className=" relative w-full bg-black  py-68">
+        <footer className=" relative w-full bg-black py-68">
 
             {/* Gradient glow from bottom */}
                 <div className="absolute bottom-[30px] left-0 w-full h-[80px] opacity-30 -z-10">

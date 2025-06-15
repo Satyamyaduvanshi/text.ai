@@ -6,6 +6,7 @@ import SecondSection from "@/components/landing/2ndSection";
 import { useEffect } from "react";
 import Footer from "@/components/Footer";
 import FifthSection from "@/components/5section";
+import MSecondSection from "@/components/secondSection";
 
 export default function Home() {
   useEffect(() => {
@@ -17,16 +18,26 @@ export default function Home() {
     document.documentElement.style.minHeight = "200vh";
   }, []);
 
+  // return (
+  //   <main className="relative w-full min-h-[200vh] overflow-x-hidden">
+  //     <div className="relative w-full">
+  //       <NavBar />
+  //       <HeroSection />
+  //       <SecondSection />
+  //       <FifthSection/>
+  //       <div>
+  //       <Footer />
+  //       </div>
+  //     </div>
+  //   </main>
+  // );
+
   return (
-    <main className="relative w-full min-h-[200vh] overflow-x-hidden">
-      <div className="relative w-full">
-        <NavBar />
-        <HeroSection />
-        <SecondSection />
-        <FifthSection/>
-        <div>
-        <Footer />
-        </div>
+    <main className="">
+      <div className=" ">
+      <NavBar />
+      <HeroSection />
+      <MSecondSection/>
       </div>
     </main>
   );

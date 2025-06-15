@@ -14,7 +14,7 @@ export default function HeroSection() {
 
   const { scrollYProgress } = useScroll();
 
-  const blur = useTransform(scrollYProgress, [0, 0.2], ["0px", "10px"]);
+  const blur = useTransform(scrollYProgress, [0, 0.2], ["0px", "20px"]);
   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0.5]);
   const scale = useTransform(scrollYProgress, [0, 0.2], [1, 0.95]);
 
@@ -103,8 +103,8 @@ export default function HeroSection() {
           }
         `}
       </style>
-
-      <section className="fixed w-full min-h-screen bg-black overflow-hidden font-sans z-10">
+      <div>
+      <section className="relative w-full min-h-screen bg-black overflow-hidden font-sans z-10">
         <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }} 
@@ -225,12 +225,13 @@ export default function HeroSection() {
               ))}
 
               <div className="ml-6 mt-2 sm:mt-0 whitespace-nowrap text-white text-sm sm:text-base md:text-lg">
-                1.5 Million+ <span className="text-gray-400">Messages Served</span>
+                2 Million+ <span className="text-gray-400">Messages Served</span>
               </div>
             </motion.div>
           </div>
         </motion.div>
       </section>
+      </div>
     </>
   );
 }
