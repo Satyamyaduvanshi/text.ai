@@ -34,7 +34,7 @@ const AnimatedIcon = ({
       <img
         src={src}
         alt="Icon"
-        className="w-full h-full object-contain"
+        className="w-full h-full object-contain z-10"
         style={{ width: size, height: size }}
       />
     </motion.div>

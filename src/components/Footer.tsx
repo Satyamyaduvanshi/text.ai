@@ -19,10 +19,10 @@ const links = [
 export default function Footer() {
 
     return (
-        <footer className=" relative w-full bg-black py-68">
+        <footer className=" relative bg-black py-68">
 
             {/* Gradient glow from bottom */}
-                <div className="absolute bottom-[30px] left-0 w-full h-[80px] opacity-30 -z-10">
+                <div className=" absolute bottom-[-20px] left-0 w-full h-[80px] opacity-30 z-10">
                   <div
                     className="w-full h-full"
                     style={{
@@ -37,7 +37,7 @@ export default function Footer() {
               <img
                 src="https://cdn.prod.website-files.com/6734183dc3243e10a47bb402/67fb5a778e1e98a1698c969e_text.ai (1).png"
                 alt="Logo"
-                className="w-[729px] h-[124px] object-contain opacity-10"
+                className="w-[190px] sm:w-[300px] md:w-[729px] lg:w-[729px] h-[124px] object-contain opacity-10"
               />
               <div className="bg-gradient-to-r from-black/80 via-white/60 to-black/80 h-[3px] w-[800px] opacity-20 mt-1" />
             </div>
@@ -113,7 +113,7 @@ export default function Footer() {
 
                 </div>
 
-                <div className=" relative flex  top-[220px] left-[405px]">
+                <div className=" relative flex  top-[200px] left-[405px]">
                     <a href=""
                     className=" font-semibold text-[11px] text-white/80"
                     >

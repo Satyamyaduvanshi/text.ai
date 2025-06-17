@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     // Ensure the page starts at the top and prevent any initial scroll
     window.scrollTo(0, 0);
-    document.body.style.overflow = "auto";
+    //document.body.style.overflow = "auto";
     
     // Add a minimum height to ensure proper scrolling
     document.documentElement.style.minHeight = "200vh";
@@ -33,8 +33,8 @@ export default function Home() {
   // );
 
   return (
-    <main className="">
-      <div className=" ">
+    <main className="relative">
+      <div className="relative">
       <NavBar />
       <HeroSection />
       <MSecondSection/>

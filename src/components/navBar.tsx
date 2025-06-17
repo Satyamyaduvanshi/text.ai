@@ -21,12 +21,12 @@ export default function NavBar() {
   }, [])
 
   return (
-    <div className="fixed top-1 left-1/2 transform -translate-x-1/2
+    <div className="fixed top-2 left-1/2 transform -translate-x-1/2
       z-50 w-full max-w-[1243px] bg-black/30 lg:rounded-full px-1 lg:border-l-[2px] lg:border-r-[2px] border-white ">
       <header className="w-full">
         <nav
           className="
-            flex items-center justify-between p-4
+            flex items-center justify-between p-2
             w-full
             max-w-[1243px] mx-auto
           "
