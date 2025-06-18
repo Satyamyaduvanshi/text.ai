@@ -1,4 +1,4 @@
-import {motion} from "framer-motion"
+
 import TestimonialsCarousel from "./checkAni"
 import Faq from "./Faq"
 

@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+
 import { FaLinkedin, FaX } from "react-icons/fa6";
 
 const links = [

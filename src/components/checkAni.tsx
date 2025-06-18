@@ -1,4 +1,6 @@
-import { motion, useAnimationControls, AnimationControls } from "framer-motion";
+"use client";
+
+import { motion, useAnimationControls } from "framer-motion";
 import { useRef, useEffect } from "react";
 
 
@@ -44,7 +46,6 @@ const peoples = [
 
 export default function TestimonialsCarousel() {
   const firstRowRef = useRef(null);
-  const secondRowRef = useRef(null);
   const firstRowControls = useAnimationControls();
   const secondRowControls = useAnimationControls();
 
