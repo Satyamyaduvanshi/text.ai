@@ -1,6 +1,6 @@
 import AnimatedIcon from "@/lib/AnimationIcon";
-import {motion, useInView, useScroll, useTransform } from "framer-motion"
-import { useRef, useState,useEffect } from "react"
+import {motion, useScroll, useTransform } from "framer-motion"
+import { useRef } from "react"
 
 export default function MSecondSection(){
 
