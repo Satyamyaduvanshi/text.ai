@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect, } from "react"
+import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
 
@@ -33,64 +33,61 @@ export default function NavBar() {
         >
           <div className="flex justify-center items-center">
             {/* Logo */}
-          <Link
-            href="/"
-            onClick={closeMenu}
-            className="hover:transition hover:duration-200 hover:ease-in-out hover:scale-110 p-2"
-          >
-            <img
-              src="https://cdn.prod.website-files.com/6734183dc3243e10a47bb402/67fb5a778e1e98a1698c969e_text.ai (1).png"
-              alt="Logo"
-              className="w-[95px] h-[22.91px] object-contain"
-            />
-          </Link>
-
+            <Link
+              href="/"
+              onClick={closeMenu}
+              className="hover:transition hover:duration-200 hover:ease-in-out hover:scale-110 p-2"
+            >
+              <img
+                src="https://cdn.prod.website-files.com/6734183dc3243e10a47bb402/67fb5a778e1e98a1698c969e_text.ai (1).png"
+                alt="Logo"
+                className="w-[95px] h-[22.91px] object-contain"
+              />
+            </Link>
           </div>
-          
 
           {/* Nav Links (Tablet/Desktop only) */}
           <div className="hidden [@media(min-width:989px)]:flex left-1/2  justify-center items-center text-sm font-medium">
-  <a
-    href="#"
-    className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-[#0062ff]/80 hover:bg-[#0062ff]/10 hover:text-white active:font-semibold"
-  >
-    Try on SMS
-  </a>
-  <a
-    href="#"
-    className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-[#0062ff]/80 hover:bg-[#0062ff]/10 hover:text-white active:font-semibold"
-  >
-    Try on WhatsApp
-  </a>
-  <a
-    href="#"
-    className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-[#0062ff]/80 hover:bg-[#0062ff]/10 hover:text-white active:font-semibold"
-  >
-    Save Contact
-  </a>
-</div>
+            <Link
+              href="#"
+              className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-[#0062ff]/80 hover:bg-[#0062ff]/10 hover:text-white active:font-semibold"
+            >
+              Try on SMS
+            </Link>
+            <Link
+              href="#"
+              className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-[#0062ff]/80 hover:bg-[#0062ff]/10 hover:text-white active:font-semibold"
+            >
+              Try on WhatsApp
+            </Link>
+            <Link
+              href="#"
+              className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-[#0062ff]/80 hover:bg-[#0062ff]/10 hover:text-white active:font-semibold"
+            >
+              Save Contact
+            </Link>
+          </div>
 
-<div className="hidden [@media(min-width:989px)]:flex gap-3 justify-center items-center text-sm font-medium">
-  <a
-    href="/"
-    className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-white/50 hover:bg-white/20 hover:text-white active:font-semibold"
-  >
-    Home
-  </a>
-  <a
-    href="/faq"
-    className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-white/50 hover:bg-white/20 hover:text-white active:font-semibold"
-  >
-    FAQ
-  </a>
-  <a
-    href="/contact us"
-    className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-white/50 hover:bg-white/20 hover:text-white active:font-semibold"
-  >
-    Contact Us
-  </a>
-</div>
-
+          <div className="hidden [@media(min-width:989px)]:flex gap-3 justify-center items-center text-sm font-medium">
+            <Link
+              href="/"
+              className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-white/50 hover:bg-white/20 hover:text-white active:font-semibold"
+            >
+              Home
+            </Link>
+            <Link
+              href="/faq"
+              className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-white/50 hover:bg-white/20 hover:text-white active:font-semibold"
+            >
+              FAQ
+            </Link>
+            <Link
+              href="/contact us"
+              className="transition duration-400 ease-in-out px-3 py-1.5 rounded-lg text-white/50 hover:bg-white/20 hover:text-white active:font-semibold"
+            >
+              Contact Us
+            </Link>
+          </div>
 
           {/* Hamburger (Mobile only) */}
           <div className="[@media(min-width:989px)]:hidden flex justify-center items-center">
@@ -111,18 +108,17 @@ export default function NavBar() {
               { label: "FAQ", href: "/faq" },
               { label: "Contact Us", href: "/contact us" },
             ].map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
                 onClick={closeMenu}
                 className="hover:text-[#0062ff] left-3 transition-colors duration-300 text-lg font-medium"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
         )}
-
       </header>
     </div>
   )
