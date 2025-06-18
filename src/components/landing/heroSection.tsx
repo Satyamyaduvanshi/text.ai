@@ -104,7 +104,7 @@ export default function HeroSection() {
         `}
       </style>
       <div>
-      <section className="relative w-full min-h-screen bg-black overflow-hidden font-sans z-10">
+      <section className="relative w-full h-screen bg-black overflow-hidden font-sans z-10">
         <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }} 
@@ -125,18 +125,26 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className={`absolute top-28 left-1/2 transform -translate-x-1/2 flex items-center justify-center gap-2 text-center text-white/60 text-xs border border-gray-600 rounded-lg p-1 pointer-events-none select-none sm:scale-75 md:scale-90 lg:scale-100 ${badgeVisible ? "opacity-100" : "opacity-0"}`}
+            className={`absolute top-24 left-1/2 transform -translate-x-1/2 flex items-center justify-center gap-3 text-center text-white/60 text-xs border border-gray-600 rounded-lg p-1  px-2 pointer-events-none select-none sm:scale-75 md:scale-90 lg:scale-100 ${badgeVisible ? "opacity-100" : "opacity-0"}`}
           >
             <span>Backed by</span>
             <div className="mt-[2px]">
               <img src="/ycom.svg" alt="Y Combinator Logo" className="h-[10px] sm:h-[12px] md:h-[15px] lg:h-[18px]" />
             </div>
+
+            <span className="text-[8px] sm:text-[10px] md:text-[13px] lg:text-[15px]"
+            >|{"  "}
+              <span className=" text-[#bc9140]">
+               SV Angel
+              </span>
+              
+            </span>
           </motion.div>
 
           {/* Hero Text */}
           <motion.div
             style={{ filter: `blur(${blur})`, opacity, scale }}
-            className="absolute top-[160px] px-4 w-full"
+            className="absolute top-[144px] px-4 w-full"
           >
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-white font-semibold leading-snug text-3xl sm:text-2xl md:text-3xl lg:text-4xl">
@@ -176,7 +184,7 @@ export default function HeroSection() {
             </div>
           </motion.div>
 
-          <div className="relative top-[460px] sm:top-[490px] md:top-[540px] lg:top-[650px]">
+          <div className="relative top-[450px] sm:top-[490px] md:top-[540px] lg:top-[640px]">
 
             {/* Buttons */}
             <motion.div
@@ -188,7 +196,7 @@ export default function HeroSection() {
                   key={i}
                   className={`${
                     i === 3 ? "flex items-center justify-center bg-gray-100 text-black hover:bg-gray-300/90" : "bg-[#0062ff] text-white hover:bg-[#0062ff]/70"
-                  } rounded-2xl px-5 py-2 sm:px-6 sm:py-3 font-semibold transition-colors duration-200 cursor-pointer whitespace-nowrap text-center text-sm sm:text-base`}
+                  } rounded-2xl px-5 py-2 sm:px-6 sm:py-3 font-semibold transition-colors duration-200 cursor-pointer whitespace-nowrap text-center text-sm sm:text-base hover:scale-102 ease-in-out hover:transition`}
                 >
                   {text}
                 </div>
@@ -210,7 +218,7 @@ export default function HeroSection() {
               ].map((src, i) => (
                 <motion.div
                   key={i}
-                  className="w-15 h-15 sm:w-12 sm:h-12 md:w-14 md:h-14 overflow-hidden rounded-full border-4 border-white"
+                  className="w-12 h-12 sm:w-10 sm:h-10 md:w-14 md:h-14 overflow-hidden rounded-full border-4 border-white"
                   style={getImageStyle(i)}
                   initial={i === 0 ? { opacity: 0 } : { x: 100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}

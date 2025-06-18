@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
 
@@ -22,7 +22,7 @@ export default function NavBar() {
 
   return (
     <div className="fixed top-2 left-1/2 transform -translate-x-1/2
-      z-50 w-full max-w-[1243px] bg-black/30 lg:rounded-full px-1 lg:border-l-[2px] lg:border-r-[2px] border-white ">
+      z-50 w-full max-w-[1243px] bg-[#2b2b2b]/10 lg:rounded-full px-1 lg:border-l-[2px] lg:border-r-[2px] border-white backdrop-blur-sm ">
       <header className="w-full">
         <nav
           className="
