@@ -86,7 +86,7 @@ export default function Footer() {
       </div>
 
      
-      <div className="mt-14 text-center text-white/70 text-xs">
+      <div className="mt-14 text-center text-white/70 text-xs mb-5 md:mb-1">
         © 2025 TextAI Corporation. All rights reserved.
         <br />
         Made with 💙 in California 🌴.
